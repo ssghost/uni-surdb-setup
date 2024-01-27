@@ -3,7 +3,7 @@ import pandas as pd
 import asyncio
 
 async def upload():
-    df = pd.read_parquet("./uniswap_v3_pools.parquet").to_json
+    df = pd.read_parquet("./uniswap_v3_pools.parquet").to_json()
     async with Surreal("ws://localhost:8000/rpc") as db:
         await db.signin({"user": "root", "pass": "root"})
         await db.use("uniswap", "uniswap")
