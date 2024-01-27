@@ -8,7 +8,7 @@ async def upload():
         await db.signin({"user": "root", "pass": "root"})
         await db.use("uniswap", "uniswap")
         await db.delete("uniswap_v3_pools")
-        await db.create("uniswap_v3_pools", df)
+        await db.create(df)
 
 if __name__ == "__main__":
     asyncio.run(upload())
