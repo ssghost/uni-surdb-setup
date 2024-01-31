@@ -1,6 +1,6 @@
 cryo logs \
     --label uniswap_v3_pools \
-    --blocks -1000:latest \
+    --blocks -10000:latest \
     --reorg-buffer 1000 \
     --subdirs datatype \
     --contract 0x1f98431c8ad98523631ae4a59f267346ea31f984 \
