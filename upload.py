@@ -27,4 +27,5 @@ async def upload_json():
             await db.create(df)
 
 if __name__ == "__main__":
-    asyncio.run(upload())
+    asyncio.run(upload_parq())
+    asyncio.run(upload_json())
